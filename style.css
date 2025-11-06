@@ -15,13 +15,13 @@ body{
 }
 
 header{
-    background: oklch(71.2% 0.194 13.428);
+    background: oklch(71.8% 0.202 349.761);
     color: #FFF;
     padding-block: 2rem;
     position: fixed;
     width: 100%;
 
-    z-index: 1;
+    z-index: 10;
 }
 
 .header-container{
@@ -63,12 +63,19 @@ main{
 
     section{
         margin-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         div{
             width: 6rem;
             height: 6rem;
-            background: oklch(37.9% 0.146 265.522);
+            background: oklch(71.8% 0.202 349.761);
             margin-bottom: 1rem;
+        }
+        .pink {
+            background: oklch(59.2% 0.249 0.584) ;
+    
         }
     }
 
@@ -85,38 +92,27 @@ main{
     }
 }
 
-
-
- text-align:center;
- margin-bottom: 2rem;
-}
-}
-
-
-
-
 #relative{
-    .pink
-    position: relative;
-    bottom: 2rem;
-    right: 2rem;
-
-}
-
-#absolute{
-/*position: relative;*/
-boder: 1px solid red;
-z-index: 1;
-}
-
-.pink{
-    position: absolute;
-    z-index: -1;
-}
-
-#fixed{
     .pink{
-        position:fixed;
+        position: relative;
+        bottom: 2rem;
+        right: 2rem;
+    }
+}
+
+#absolute {
+    position: relative;
+    z-index: 1;
+
+    .pink {
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+#fixed {
+    .pink{
+        position: fixed;
         top: 15rem;
         left: 10rem;
     }
