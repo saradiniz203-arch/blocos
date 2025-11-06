@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+header{
+    background: oklch(71.2% 0.194 13.428);
+    color: #FFF;
+    padding-block: 2rem;
+    position: fixed;
+    width: 100%;
+
+    z-index: 1;
+}
+
+.header-container{
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    ul{
+        display: flex;
+        gap: 5rem;
+        list-style: none;
+    }
+
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    a:hover{
+        transform: scale(1.1);
+        font-weight: bold;
+        transition: ease-in-out .4s;
+    }
+}
+
+main{
+    background:oklch(93.6% 0.032 17.717) ;
+    min-height: calc(100svh - 11.8rem);
+    padding-block: 15.8rem 4rem;
+}
+
+.main-container{
+    max-width: 120rem;
+    margin: 0 auto;
+    line-height: 2.3rem;
+
+    section{
+        margin-bottom: 4rem;
+
+        div{
+            width: 6rem;
+            height: 6rem;
+            background: oklch(37.9% 0.146 265.522);
+            margin-bottom: 1rem;
+        }
+    }
+
+    h2{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    p{
+        max-width: 60rem;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+ text-align:center;
+ margin-bottom: 2rem;
+}
+}
+
+
+
+
+#relative{
+    .pink
+    position: relative;
+    bottom: 2rem;
+    right: 2rem;
+
+}
+
+#absolute{
+/*position: relative;*/
+boder: 1px solid red;
+z-index: 1;
+}
+
+.pink{
+    position: absolute;
+    z-index: -1;
+}
+
+#fixed{
+    .pink{
+        position:fixed;
+        top: 15rem;
+        left: 10rem;
+    }
+}
